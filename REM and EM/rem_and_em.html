@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Using REM and EM for a Complex Layout</title>
+    <style>
+        html {
+            font-size: 16px;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #eee;
+            padding: 1rem;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        li {
+            padding: 0.5em;
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1rem;
+            transition: all 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .main {
+            flex-grow: 1;
+            padding: 1rem;
+        }
+
+        .sidebar {
+            width: 15em;
+            padding: 1rem;
+            font-size: 0.9em;
+        }
+
+        @media screen and (max-width: 768px) {
+            html {
+                font-size: 14px;
+            }
+
+            header {
+                padding: 1rem;
+            }
+
+            .content {
+                flex-direction: column;
+            }
+
+            .sidebar {
+                width: 100%;
+                margin-top: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Using REM and EM for a Complex Layout</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="main">
+            <h2>Main Content</h2>
+            <p>In this example, we're using both REM and EM units to create a complex layout that includes a header,
+                navigation menu, content area, and sidebar. By using REM and EM units, we can create a responsive design
+                that adapts to different screen sizes and device types.</p>
+            <p>We've used flexbox to create a responsive layout that adjusts the position and size of the content and
+                sidebar based on the available screen space. We've also used media queries to adjust the font size and
+                layout of the header and content area on smaller screens.</p>
+            <p>Overall, this example demonstrates how REM and EM units can be used to create complex, responsive layouts
+                that adapt to different devices and screen sizes.</p>
+        </div>
+        <div class="sidebar">
+            <h3>Sidebar</h3>
+            <ul>
+                <li><a href="#">Link 1</a></li>
+                <li><a href="#">Link 2</a></li>
+                <li><a href="#">Link 3</a></li>
+                <li><a href="#">Link 4</a></li>
+                <li><a href="#">Link 5</a></li>
+            </ul>
+        </div>
+        </a></li>
+        <li><a href="#">Link 3</a></li>
+        <li><a href="#">Link 4</a></li>
+        <li><a href="#">Link 5</a></li>
+        </ul>
+    </div>

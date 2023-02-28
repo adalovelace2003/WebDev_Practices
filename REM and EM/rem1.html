@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Using REM for a Responsive Navigation Menu</title>
+  <style>
+    html {
+      font-size: 16px;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: sans-serif;
+    }
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 16px;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    li {
+      padding: 0.5rem;
+    }
+    a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1rem;
+      transition: all 0.3s ease-in-out;
+    }
+    a:hover {
+      color: #ff0;
+    }
+    @media screen and (max-width: 768px) {
+      html {
+        font-size: 14px;
+      }
+      ul {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      li {
+        padding: 0.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css?family=Ranga');
+body{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+div{
+	font-size:30px;
+	font-family: 'Ranga', cursive;
+ 	position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.four{
+			fill:none;
+			fill-opacity:1;
+			stroke:#000000;
+			stroke-width:4.48801327;
+			stroke-linecap:butt;
+			stroke-linejoin:miter;
+			stroke-miterlimit:4;
+			stroke-opacity:1
+
+		}
+
+		.cube{
+			fill:none;
+			stroke:#000000;
+			stroke-width:6.50948906;
+			stroke-linecap:round;
+			stroke-linejoin:round;
+			stroke-miterlimit:4;
+			stroke-opacity:1
+		}	
+
+		.four, .cube{
+			animation: drawf 5s  forwards ease-out;
+		}
+
+		@keyframes drawf{
+			to{
+				stroke-dashoffset: 0;
+			}
+		}
+
+.color_anim{
+	animation: color_a 4.5s infinite alternate ;
+}
+
+@keyframes color_a{
+	0%{
+		stroke:#000000;
+	}
+	20%{
+		stroke:#c41717;
+	}
+	40%{
+		stroke:#a8871c;
+	
+	}
+	60%{
+		stroke:#15ba12;
+		
+	}
+	80%{
+		stroke:#1252ba;	
+	}
+	100%{
+		stroke:#b512af;
+	}
+	
+}
+	.hang{
+		animation: hang-a 6s infinite alternate; 
+	}
+
+@keyframes hang-a{
+	
+		0%{
+		 transform: translate(-50%, -50%) rotatez(0deg);
+						
+		}
+	20%{
+				 transform: translate(-50%, -50%) rotatez(15deg); 
+	}	
+	40%{
+		 
+		transform: translate(-50%, -50%) rotatez(0deg); 
+	}
+		
+	50%{
+		 transform: translate(-50%, -50%) rotatez(0deg); 
+			}
+	80%{
+		 transform: translate(-50%, -50%) rotatez(-15deg); 
+		}
+	90%{
+		 transform: translate(-50%, -50%) rotatez(0deg); 
+			}
+	100%{
+		 transform: translate(-50%, -50%) rotatez(0deg); 
+			}
+
+	}
+	
+.me{
+	margin:0 ;
+	font-weight: 600;
+	font-family:cursive;
+	color:#75787c;
+}
