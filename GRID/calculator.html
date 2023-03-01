@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color: aliceblue;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    html{
+        font-size: 220px;
+    }
+    .container{
+        display: grid;
+        grid-template:70px 50px 50px 50px 50px 50px 20px / 50px 50px 50px 50px;
+        grid-gap: 1px;
+        border: 2px solid rgb(151, 148, 148);
+        max-width: fit-content;
+        border-radius: 10px;
+        background-color: powderblue;
+    }
+    button{
+        border-radius: 5px;
+
+        border: 1px solid gray;
+        cursor: pointer;
+    }
+    button:hover{
+        background-color: white;
+    }
+    button:active{
+        background-color: gray;
+    }
+    #plus,#equals{
+        grid-row: span 2;
+    }
+    #zero{
+        grid-column: span 2 ;
+    }
+    span{
+        padding-top: 3px;
+        background-color: white;
+        border: 1px solid gray;
+        grid-row: 7;
+        grid-column: span 4;
+        text-align: center;
+        font-size: 10px;
+        font-weight: 600;
+        font-family: 'Courier New', Courier, monospace;
+        border-radius: 5px;
+        margin: 1px;
+        text-align: end;
+    }
+    #content{
+        grid-area: 1/1/1/5;
+    }
+</style>
+
+<body>
+    
+
+    <div class="container">
+        <span id="content"> 5 = </span>
+        <button> % </button>
+        <button> / </button>
+        <button> X </button>
+        <button> - </button>
+        <button> 1 </button>
+        <button> 2 </button>
+        <button> 3 </button>
+        <button id="plus"> + </button>
+        <button> 4 </button>
+        <button> 5 </button>
+        <button> 6 </button>
+        <button> 7 </button>
+        <button> 8 </button>
+        <button> 9 </button>
+        <button id="equals" > = </button>
+        <button> . </button>
+        <button id="zero"> 0 </button>
+        <span> Ada Calculator</span>
+    </div>
+
+
+</body>
+</html>

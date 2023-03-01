@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="bg-slate-200">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="/dist/output.css" rel="stylesheet">
+</head>
+<style>
+
+    *{
+        color: white;
+    }
+    p{
+        overflow: auto;
+    }
+    .grid {
+        grid-template: 300px 300px / 1fr 1fr 1fr 1fr;
+    }
+
+    h3,
+    h4 {
+        line-height: 8px;
+    }
+    @media   (max-width: 1350px) {
+        .container{
+            grid-template: 300px 300px / 1fr 1fr 1fr;
+        }
+        .grid4{
+            grid-column: span 2;
+        }
+      }
+    
+    @media (max-width: 1000px ){
+        .container{
+            grid-template: 1fr 1fr 1fr 1fr 1fr / 1fr 1fr ;
+        }
+        .grid2{
+            grid-row: span 2;
+        }
+    }
+    @media (max-width: 650px ){
+        .container{
+            grid-template: 1fr / 1fr ;
+        }
+        .grid2{
+            grid-row: 2;
+        }
+        .grid3{
+            grid-row: 3;
+        }
+    }
+ 
+   
+    
+</style>
+
+<body>
+    <div class="container grid gap-3 min-w-full max-h-full">
+        <div class=" bg-purple-500 shadow-gray-400 shadow-md drop-shadow rounded-xl p-2 m-2 col-span-2 grid1">
+            <section class="p-2">
+                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+                    class="float-left mt-1 mr-4 inline h-10" alt="">
+                <h3 class=" text-gray-100 mt-2 inline text-base font-semibold">Michael Jonson</h3>
+                <h4 class="text-gray-300 text-sm leading-3 ">Junior Officer</h4>
+            </section>
+            <h5 class="p-2 font-bold text-xl clear-both">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid officia ipsum ullam excepturi vero
+                consequuntur.
+            </h5>
+            <p class="p-2 text-sm font-semibold text-gray-300 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis distinctio nisi culpa delectus
+                reprehenderit modi earum sequi hic, laborum, qui, dolore eligendi alias? Dolorem unde, aliquam
+                reprehenderit voluptatibus distinctio corrupti sit perspiciatis blanditiis quasi earum harum debitis
+                dignissimos vel eius consectetur numquam aperiam accusamus id impedit officia dolorum ut
+                necessitatibus. </p>
+
+        </div>
+        <div class=" bg-slate-500 shadow-gray-400 shadow-md drop-shadow rounded-xl p-2 m-2 grid2">
+            <section class="p-2">
+                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+                    class="float-left mt-1 mr-4 inline h-10" alt="">
+                <h3 class=" text-gray-100 mt-2 inline text-base font-semibold">Michael Jonson</h3>
+                <h4 class="text-gray-300 text-sm leading-3 ">Junior Officer</h4>
+            </section>
+            <h5 class="p-2 font-bold text-xl clear-both">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </h5>
+            <p class="p-2 text-sm font-semibold text-gray-300  ">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Blanditiis distinctio nisi culpa delectus
+                reprehenderit modi earum sequi hic, laborum, qui, dolore eligendi alias? Dolorem unde, aliquam
+                reprehenderit voluptatibus distinctio corrupti sit perspiciatis</p>
+
+        </div>
+        <div class="bg-white shadow-gray-400 shadow-md drop-shadow rounded-xl p-2 m-2 grid3 row-span-2">
+            <section class="p-2">
+                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+                    class="float-left mt-1 mr-4 inline h-10" alt="">
+                <h3 class=" text-gray-700 mt-2 inline text-base font-semibold">Michael Jonson</h3>
+                <h4 class="text-gray-500 text-sm leading-3 ">Junior Officer</h4>
+            </section>
+            <h5 class="p-2 font-bold text-xl clear-both text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid officia ipsum ullam excepturi vero
+                consequuntur.
+            </h5>
+            <p class="p-2 text-sm font-semibold  text-gray-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis distinctio nisi culpa delectus
+                reprehenderit modi earum sequi hic, laborum, qui, dolore eligendi alias? Dolorem unde, aliquam
+                reprehenderit voluptatibus distinctio corrupti sit perspiciatis blanditiis quasi earum harum debitis
+                dignissimos vel eius consectetur numquam aperiam accusamus id impedit officia dolorum ut
+                reprehenderit modi earum sequi hic, laborum, qui, dolore eligendi alias? Dolorem unde, aliquam
+                reprehenderit voluptatibus distinctio corrupti sit perspiciatis blanditiis quasi earum harum debitis
+                dignissimos vel eius consectetur numquam aperiam accusamus id impedit officia dolorum ut
+                necessitatibus. </p>
+
+        </div>
+        <div class="bg-white shadow-gray-400 shadow-md drop-shadow rounded-xl p-2 m-2 grid4 ">
+            <section class="p-2">
+                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+                    class="float-left mt-1 mr-4 inline h-10" alt="">
+                <h3 class="text-gray-700 mt-2 inline text-base font-semibold">Michael Jonson</h3>
+                <h4 class="text-gray-500 text-sm leading-3 ">Junior Officer</h4>
+            </section>
+            <h5 class="p-2 font-bold text-xl clear-both text-gray-700">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid
+            </h5>
+            <p class="p-2 text-sm font-semibold text-gray-500 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Blanditiis distinctio nisi culpa delectus
+                reprehenderit modi earum sequi hic, laborum, qui, dolore eligendi alias? Dolorem unde,</p>
+
+        </div>
+        <div class="bg-sky-900 shadow-gray-400 shadow-md drop-shadow rounded-xl p-2 m-2 grid5 col-span-2">
+            <section class="p-2">
+                <img src="https://cdn-icons-png.flaticon.com/128/3135/3135715.png"
+                    class="float-left mt-1 mr-4 inline h-10" alt="">
+                <h3 class=" text-gray-100 mt-2 inline text-base font-semibold">Michael Jonson</h3>
+                <h4 class="text-gray-300 text-sm leading-3 ">Junior Officer</h4>
+            </section>
+            <h5 class="p-2 font-bold text-xl clear-both">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid officia ipsum ullam excepturi vero
+                consequuntur.
+            </h5>
+            <p class="p-2 text-sm font-semibold  text-gray-300 ">Lorem ipsum dolor sit amet consectetur adipisicing
+                elit.
+                Blanditiis distinctio nisi culpa delectus
+                reprehenderit modi earum sequi hic, laborum, qui, dolore eligendi alias? Dolorem unde, aliquam
+                reprehenderit voluptatibus distinctio corrupti sit perspiciatis blanditiis quasi earum harum debitis
+                dignissimos vel eius consectetur numquam aperiam accusamus id impedit officia dolorum ut
+                necessitatibus. </p>
+
+        </div>
+
+    </div>
+
+
+
+</body>
+<script src="/src/index.js"></script>
+
+</html>
